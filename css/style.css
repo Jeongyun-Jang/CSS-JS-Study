@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+    margin: 0 auto;
+    color: #3f464d;
+  }
+  
+  .inner {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+  }
+
+  header {
+      width: 100%;
+      height: 60px;
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+  }
+
+  .head-container {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between; /*양끝 정렬*/
+    align-items: center;
+
+  }
+
+  .head-container .head-brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+  }
+
+  .head-container .head-brand a:hover { /*이 컨테이너의 이 항목에서만 a 태그 hover 적용*/
+    color: #2186c4;
+    cursor: pointer;
+
+}
+  @media only screen and (min-width: 1200px){
+      .inner{
+          max-width: 1200px;
+      }
+
+  }
+
+  a { /*a태그 css를 unset 했다고해서 가상클래스인 link, visited 등의 css가 해제 된것은 아니므로 따로 지정해줘야한다.*/
+      all: unset;
+  }
+
+  a:link {/*클릭*/
+      text-decoration: none;
+      color: #3f464d;
+  }
+
+  a:visited {/*방문시*/
+      text-decoration: none;
+      color: #3f464d;
+  }
+
+  a:active { /*클릭된 상태*/
+      text-decoration: none;
+      color: #3f464d;
+  }
+
+  a:hover { /*글씨에 마우스 올린 상태*/
+    text-decoration: none;
+    color: #3f464d;
+}
